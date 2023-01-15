@@ -13,10 +13,9 @@ const Home = () => {
             ÂNGELO J. DA ROSA
           </h1>
           <h4 class='texto'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <br></br>
-          Praesent nec tellus auctor, tincidunt ligula.
+          Here in my own website you can find my projects,<br/> skills, jobs and fun facts about me 
           </h4>
-          <div class='namorada'>Joyce eu te amo ♥</div>
+          <div class='namorada'><br/><br/>Joyce eu te amo ♥</div>
         </div>
         <img src={eu_transparente} class='imagem' />
     </div>
