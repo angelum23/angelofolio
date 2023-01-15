@@ -8,7 +8,7 @@ import About from './pages/about';
 import Portfolio from './pages/portfolio';
 import Contact from './pages/contact';
   
-function App() {
+export default function App() {
     return (
         <Router>
         <Navbar />
@@ -20,6 +20,4 @@ function App() {
             </Routes>
         </Router>
     );
-}
-  
-export default App;
+};
