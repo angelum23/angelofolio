@@ -47,18 +47,27 @@
 
 /*Contact*/
 
-.divcontact{
-  margin: auto;
+.divemailcontact{
+  margin: 30%;
   margin-top: 2%;
-  width: 50%;
-  height: 500px;
-  background: #999999;
+  width: 40%;
+  height: 550px;
+  background: #F1F1F1;
   display: flex;
+  position: absolute;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  box-shadow: 4px 8px #CCCCCC;
 }
 
-label:before {
-  content: "\a\a";
-  white-space: pre;
+.divdatacontact{
+  background: #F1F1F1;
+  position: absolute;
+  width: 250px;
+  height: auto;
+  margin: 75%;
+  margin-top: 2%;
+  text-align: center;
+  box-shadow: 4px 8px #CCCCCC;
 }
