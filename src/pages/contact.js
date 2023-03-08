@@ -47,8 +47,8 @@ const Contact = () => {
       <div class='divdatacontact'>
         <h2 class="contacts">Contact links</h2>
         <h3 class="texto">
-          <p><FaGithub/> <a href="https://github.com/angelum23">GitHub</a></p>
-          <p><FaLinkedin/> <a href="https://www.linkedin.com/in/ângelo-josé-da-rosa-7b1bb11b9/">Linkedin</a></p>
+          <p><FaGithub/> <a href="https://github.com/angelum23" target="_blank">GitHub</a></p>
+          <p><FaLinkedin/> <a href="https://www.linkedin.com/in/ângelo-josé-da-rosa-7b1bb11b9/" target="_blank">Linkedin</a></p>
 
           <CopyToClipboard text={"angelojose.net@gmail.com"}
             onCopy={() => {
