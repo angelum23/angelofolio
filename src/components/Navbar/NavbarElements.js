@@ -7,6 +7,8 @@ export const Nav = styled.nav`
   height: 85px;
   display: flex;
   justify-content: center;
+  border-radius: 20px;
+  box-shadow: 4px 8px #CCCCCC;
 `;
 
 export const NavLink = styled(Link)`

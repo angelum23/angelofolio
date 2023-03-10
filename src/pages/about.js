@@ -82,24 +82,65 @@ const About = () => {
 
   return (
     <div>
-      <div class="greeting">
-        Good {getGreeting()}!
-      </div>
-      <div class="text">
-        My name is <strong>Ângelo</strong>, I am <br/>
-        {getAge()} years old
-      </div>
-      <div class="chartarea">
-        <div class="polararea">
-          <PolarArea data={polarData} />
+      <div class="charts">
+        <div class="greeting">
+          <br/>
+          Good {getGreeting()}!
         </div>
-        <div class="textoinformativo">
-          Two chart with some important facts about me<br/><br/><br/>
-          <strong>Polar area chart</strong> is having the value 20 as my best competence<br/><br/><br/>
-          <strong>Doughnut chart</strong> is the porcentage of my music listening time
+        <div class="text">
+          My name is <strong>Ângelo</strong>, I am <br/>
+          {getAge()} old
         </div>
-        <div class="doughnut">
-          <Doughnut data={doughnutData} />
+        <div class="chartarea">
+          <div class="polararea">
+            <PolarArea data={polarData} />
+          </div>
+          <div class="textoinformativo">
+            Two chart with some important facts about me<br/><br/><br/>
+            <strong>Polar area chart</strong> is having the value 20 as my best competence<br/><br/><br/>
+            <strong>Doughnut chart</strong> is the porcentage of my music listening time
+          </div>
+          <div class="doughnut">
+            <Doughnut data={doughnutData} />
+          </div>
+        </div>
+        <br/><br/>
+      </div>
+
+      <div class="box2">
+        <div class="boxhistoria">
+          <div class="historia">
+            <br/>
+            <strong>Short story</strong><br/>
+            <hr/>
+            <p>
+              I was 15 years old when I have my first contact with programming
+              on some python free class on youtube.
+              With sixteen I started my technical course and for two years, 
+              I learned the programming, web basics and made some interesting projects
+              After the ending, I started to work in a software developer with a media of 
+              300 coworkers for two years, and learned a lot 
+              of C#, Entity, .net Core, Oracle and Javascript.
+              One year after starting working, I started my 
+              software engineering college, where I am learning a lot
+              of new new technologies, like python API's, react projects and cloud computing. 
+            </p>
+          </div>
+        </div>
+        <div class="boxcarreira">
+          <div class="carreira">
+            <strong>Carrer</strong>
+            <hr/>
+            <p>
+              -------------------------------------02/2021<br/>
+              Useall Software<br/>
+              -------------------------------------03/2023<br/>
+              <br/><br/>
+              -------------------------------------03/2023<br/>
+              Nextfit<br/>
+              --------------------------------Atualmente<br/>
+            </p>
+          </div>
         </div>
       </div>
     </div>
