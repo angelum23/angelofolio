@@ -7,10 +7,61 @@ import {
   Legend,
 } from 'chart.js';
 import { Doughnut, PolarArea } from 'react-chartjs-2';
+import { Chrono } from "react-chrono";
 
 ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
 
 const About = () => {  
+  const timelineItems = [{
+    title: "Jan 2019",
+    cardTitle: "Informática",
+    url: "https://unisatc.com.br/tecnico/informatica/",
+    cardSubtitle:"Início",
+    cardDetailedText: "Técnico em informática, cursado no colégio SATC",
+    // media: {
+    //   type: "IMAGE",
+    //   source: {
+    //     url: "http://someurl/image.jpg"
+    //   }
+    // }
+  }, {
+    title: "Dec 2020",
+    cardTitle: "Informática",
+    url: "https://unisatc.com.br/tecnico/informatica/",
+    cardSubtitle:"Conclusão",
+    cardDetailedText: "Técnico em informática, cursado no colégio SATC",
+  }, {
+    title: "Feb 2021",
+    cardTitle: "Useall",
+    url: "https://www.useall.com.br",
+    cardSubtitle:"Início",
+    cardDetailedText: "Desenvolvimento web front-end",
+  }, {
+    title: "Apr 2021",
+    cardTitle: "Useall",
+    url: "https://www.useall.com.br",
+    cardSubtitle:"Início",
+    cardDetailedText: "Desenvolvimento web full-stack",
+  }, {
+    title: "Feb 2022",
+    cardTitle: "Engenharia de software",
+    url: "https://unisatc.com.br/graduacao/engenharia-de-software/",
+    cardSubtitle:"Início",
+    cardDetailedText: "Bacharelado em engenharia de software, cursado na faculade SATC",
+  }, {
+    title: "Mar 2023",
+    cardTitle: "Useall",
+    url: "https://www.useall.com.br",
+    cardSubtitle:"Fim",
+    cardDetailedText: "Desenvolvimento web full-stack",
+  }, {
+    title: "Mar 2023",
+    cardTitle: "Nextfit",
+    url: "https://nextfit.com.br",
+    cardSubtitle:"Início",
+    cardDetailedText: "Desenvolvimento web back-end",
+  }];
+
   const polarData = {
     labels: ['C#', 'Javascript', 'Oracle Pl/sql', 'React', 'Unity', 'Python'],
     datasets: [
@@ -129,17 +180,11 @@ const About = () => {
         </div>
         <div class="boxcarreira">
           <div class="carreira">
-            <strong>Carrer</strong>
+            <strong>Timeline</strong>
             <hr/>
-            <p>
-              -------------------------------------02/2021<br/>
-              Useall Software<br/>
-              -------------------------------------03/2023<br/>
-              <br/><br/>
-              -------------------------------------03/2023<br/>
-              Nextfit<br/>
-              --------------------------------Atualmente<br/>
-            </p>
+            <div style={{ width: "500px", height: "400px" }}>
+              <Chrono items={timelineItems} />
+            </div>
           </div>
         </div>
       </div>
