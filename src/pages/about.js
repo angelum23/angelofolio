@@ -59,7 +59,7 @@ const About = () => {
     cardTitle: "Nextfit",
     url: "https://nextfit.com.br",
     cardSubtitle:"Início",
-    cardDetailedText: "Desenvolvimento web back-end",
+    cardDetailedText: "Desenvolvimento web full-stack + mobile",
   }];
 
   const polarData = {
