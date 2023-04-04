@@ -63,11 +63,11 @@ const About = () => {
   }];
 
   const polarData = {
-    labels: ['C#', 'Javascript', 'Oracle Pl/sql', 'React', 'Unity', 'Python'],
+    labels: ['C#', 'Javascript', 'PL/SQL', 'React', 'HTML/CSS', 'Python'],
     datasets: [
       {
         label: 'Qualifications',
-        data: [20, 18, 16, 14, 7, 13],
+        data: [20, 18, 15, 12, 12, 15],
         backgroundColor: [
           'rgba(153, 102, 255, 0.5)',
           'rgba(255, 99, 132, 0.5)',

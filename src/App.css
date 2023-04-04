@@ -67,11 +67,57 @@
   position: absolute;
   width: 250px;
   height: auto;
-  margin: 75%;
+  margin-left: 75%;
   margin-top: 2%;
   text-align: center;
   box-shadow: 4px 8px #CCCCCC;
   border-radius: 40px;
+}
+
+.divchat{
+  background: #F1F1F1;
+  position: absolute;
+  width: 400px;
+  height: 555px;
+  margin-left: 2%;
+  margin-top: 2%;
+  text-align: center;
+  box-shadow: 4px 8px #CCCCCC;
+  border-radius: 40px;
+}
+
+.chatbox{
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 40px;
+  border-color: #b9b9b9;
+  border-style: solid;
+}
+
+.tfgpt{
+  border-color: #b9b9b9;
+  border-width: 50px;
+}
+
+.divtoken{
+  background: #F1F1F1;
+  position: absolute;
+  width: 250px;
+  height: 160px;
+  margin-left: 75%;
+  margin-top: 25%;
+  text-align: center;
+  box-shadow: 4px 8px #CCCCCC;
+  border-radius: 40px;
+}
+
+.tftoken{
+  width: 80%;
+  margin: auto;
+  margin-top: 15%
 }
 
 /* About */

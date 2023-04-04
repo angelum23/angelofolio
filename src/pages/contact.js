@@ -1,3 +1,4 @@
+import { Configuration, OpenAIApi } from "openai";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { TextField, Button } from '@mui/material';
@@ -10,6 +11,8 @@ const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
+    //not implemented yet
+    
     e.preventDefault();
 
     emailjs.sendForm('YOUR_SERVICE_ID', 
@@ -22,9 +25,31 @@ const Contact = () => {
     });
   };
 
+  const sendChat = async () => {
+    let input = document.getElementById("tfgpt").value;
+    let token = document.getElementById("tftoken").value;
+    
+    debugger;
+
+    const completion = await openai.createCompletion({
+      model: "text-davinci-003",
+      prompt: input,
+      temperature: 0.6,
+    });    
+  }
+
   return (
     <div>
       <NotificationContainer/>
+
+      <div class="divchat">
+        <div class="chatbox">
+
+        </div> 
+
+          <TextField id="tfgpt"></TextField>
+          <Button variant="contained" type="submit" value="Send" color="secondary" onClick={sendChat}>Send</Button>
+      </div>
 
       <div class='divemailcontact'>
         <form ref={form} onSubmit={sendEmail}>
@@ -58,6 +83,10 @@ const Contact = () => {
           </CopyToClipboard>
 
         </h3>
+      </div>
+      <div class='divtoken'>
+        <h2 class="contacts">Token</h2>
+        <TextField id="tftoken" class='tftoken'></TextField>
       </div>
     </div>
   );
